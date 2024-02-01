@@ -17,9 +17,9 @@ const Home = ({ onSearch }) => {
 
   return (
     <div className='bg-zinc-500'>
-      <h1>Welcome to NAT-Services.</h1>
+      <h1 className='font-bold text-3xl pt-6 pl-10'>Welcome to <span className='italic underline cursor-pointer hover:text-purple-800'>NAT-Services</span>.</h1>
 
-      <div>
+      <div className='mt-7'>
         <form onSubmit={handleSubmit} className="flex items-center mx-[25rem] ">
           <input
             type="text"

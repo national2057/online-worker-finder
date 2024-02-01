@@ -1,16 +1,22 @@
+import { NavLink } from "react-router-dom"
+
 const Services = () => {
   return (
     <div>
       <h1>Our Services:</h1>
       <div className="grid grid-cols-3 gap-14 px-20 py-10 ">
 
-        <div className="bg-slate-400">
-          <img className="h-[300px] w-[300px]" src="../images/plumber.png" alt="Plumbler" />
-          <h1 className="font-bold">Plumber</h1>
-          <p>Our focus of providing the highest quality plumbing services and products along with our professional commitment earned us the reputation of being the first choice of many commercial clients like you. They count on us to take care of their plumbing needs.</p>
+        <div className="bg-slate-400 p-5 rounded-md
+        ">
+          <img className="h-[270px] w-[375px] rounded" src="../images/plumber.png" alt="Plumbler" />
+          <h1 className="font-bold text-xl my-2">Plumber</h1>
+          <p className="text-balance">Our focus of providing the highest quality plumbing services and products along with our professional commitment earned us the reputation of being the first choice of many commercial clients like you. They count on us to take care of their plumbing needs.</p>
+          <button className="bg-red-700 w-[300px] h-9 rounded-lg mt-7 ml-10 text-xl font-medium">
+            <NavLink>What's your problem?</NavLink>
+          </button>
         </div>
 
-        <div className="bg-slate-400">
+        {/* <div className="bg-slate-400">
           <img className="h-[300px] w-[300px]" src="../images/electrician.png" alt="Electrician" />
           <h1 className="font-bold">Electrician</h1>
           <p>Our focus of providing the highest quality electrical services and products along with our professional commitment earned us the reputation of being the first choice of many commercial clients like you. They count on us to take care of their electrical needs.</p>
@@ -92,7 +98,7 @@ const Services = () => {
           <img className="h-[300px] w-[300px]" src="../images/automobile.jpg" alt="Automobile" />
           <h1 className="font-bold">Automobile</h1>
           <p>All the services related to Automobile; wheeled motor vehicle used for transportation.</p>
-        </div>
+        </div> */}
       </div>
 
     </div>

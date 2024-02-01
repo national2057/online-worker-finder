@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Login from './pages/auth_page/Login';
 import Register from './pages/auth_page/Register';
 import Footer from './components/Footer';
+import Policy from './pages/policy';
 
 const App = () => {
   return (
@@ -27,6 +28,9 @@ const App = () => {
           <Route path='login' element={<Login />} />
           <Route path='register' element={<Register />} />
         </Route> */}
+
+        <Route path='policy' element={<Policy />} />
+
       </Routes>
 
       <Footer />
